@@ -33,13 +33,14 @@
     <![endif]-->
 </head> 
 
-<body class="home-page">     
-    <div class="header-wrapper header-wrapper-home">
+<body class="home-page" ng-app="thubApp">
+    <div class="header-wrapper">
         <!-- ******HEADER****** --> 
         <header id="header" class="header navbar-fixed-top">  
             <div class="container">       
                 <h1 class="logo">
                     <a href="index.html"><img src="/assets/images/logo.png" style="width:90px;height:50px;"/></a>
+                    <a href="index.html"><span class="highlight">TechnoWebHub</span>Software</a>
                 </h1><!--//logo-->
                 <nav class="main-nav navbar-right" role="navigation">
                     <div class="navbar-header">
@@ -52,255 +53,27 @@
                     </div><!--//navbar-header-->
                     <div id="navbar-collapse" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="active nav-item"><a href="index.html">Home</a></li>
+                            <li class="nav-item"><a href="#/">Home</a></li>
                             <li class="nav-item dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="work.html">Work <i class="fa fa-angle-down"></i></a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#/work">Work <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="work.html">Our Work</a></li>
-                                    <li><a href="case-study-1.html">Single Case Study 1</a></li>
-                                    <li><a href="case-study-2.html">Single Case Study 2</a></li>
-                                    <li><a href="blog-post.html">Single Blog Post</a></li>            
+                                    <li><a href="#/work/">System 1</a></li>        
+                                    <li><a href="#/work/">System 2</a></li>        
+                                    <li><a href="#/work/">System 3</a></li>        
                                 </ul>
                             </li><!--//dropdown--> 
-                            <li class="nav-item"><a href="about.html">About</a></li>                                              
+                            <li class="nav-item"><a href="#/services">Our Services</a></li>                                              
+                            <li class="nav-item"><a href="#/about">About</a></li>                                              
                             <!--<li class="nav-item"><a href="blog.html">Blog</a></li>-->
-                            <li class="nav-item last"><a href="contact.html">Contact</a></li>
+                            <li class="nav-item last"><a href="#/contact">Contact</a></li>
                         </ul><!--//nav-->
                     </div><!--//navabr-collapse-->
                 </nav><!--//main-nav-->
             </div><!--//container-->
         </header><!--//header-->   
-        <div class="bg-slider-wrapper">
-            <div id="bg-slider" class="flexslider bg-slider">
-                <ul class="slides">
-                    <li class="slide slide-1"></li>
-                    <li class="slide slide-2"></li>
-                    <li class="slide slide-3"></li>
-                </ul>
-            </div>
-        </div><!--//bg-slider-wrapper--> 
-        <section id="home-promo" class="home-promo section">
-            <div class="container text-center">                
-                <h2 class="title">
-                    <span class="upper">We build</span>
-                    <span class="middle">Web and Mobile Apps</span>
-                    <span class="bottom">for Businesses</span>
-                </h2>
-                <button class="btn btn-cta btn-cta-primary" type="button" data-toggle="modal" data-target="#modal-contact" data-backdrop="static">Talk to us</button>
-            </div><!--//container-->
-        </section><!--//promo-->
+        
     </div><!--//header-wrapper-->
-       
-    <!-- ******Why Section****** -->
-    <section id="who" class="who section">
-        <div class="container text-center">
-            <h2 class="title text-center">Who we are</h2>
-            <p class="intro text-center">We are a team of enthusiastic Web/Mobile developers and designers based in Philippines. We are specialised in Mobile and Web Application Development. Our expertise is in Java/J2EE, PHP, iOS and Android.</p>
-            <div class="row benefits text-center">
-                <div class="item col-md-4 col-sm-6 col-xs-12">
-                    <div class="item-inner">
-                        <div class="fs1" aria-hidden="true" data-icon="&#xe007;"></div>                        
-                        <h3 class="sub-title">Skilled team</h3>
-                        <div class="desc">
-                            <p>We are passionate in what we do best, Software Development. Skilled in every aspect of the software technology stack.</p>
-                        </div>                
-                    </div>       
-                </div><!--//item-->
-                <div class="item col-md-4 col-sm-6 col-xs-12 sm-break">
-                    <div class="item-inner">
-                        <div class="fs1" aria-hidden="true" data-icon="&#xe01c;"></div>
-                        <h3 class="sub-title">Agile approach</h3>
-                        <div class="desc">
-                            <p>We use Scrum as our primary technology but we are extremely flexible as long as we are meeting the desired results.</p>
-                        </div>   
-                    </div><!--//item-inner-->                    
-                </div><!--//item-->
-                <div class="item col-md-4 col-sm-6 col-xs-12">
-                    <div class="item-inner">
-                        <div class="fs1" aria-hidden="true" data-icon="&#xe031;"></div>
-                        <h3 class="sub-title">High quality code and delivery</h3>
-                        <div class="desc">
-                            <p>We highly regard ourselves in producing high quality deliverables for our clients.</p>
-                        </div>            
-                    </div><!--//item-inner-->
-                </div><!--//item-->
-            </div><!--//row-->
-            <a class="btn btn-cta btn-cta-secondary" href="about.html">More about us</a>
-        </div><!--//container-->
-    </section><!--//who-->
-    
-    <!-- ******Latest work section****** -->
-    <section id="latest-work" class="latest-work section">
-        <div class="container-fluid text-center">
-            <h2 class="title text-center">Our Products</h2>
-            <div id="work-carousel" class="items owl-carousel owl-theme">
-                <div class="item item-1">
-                    <div class="row">
-                        <figure class="figure-container col-md-6 col-sm-12 col-xs-12">
-                            <a href="http://wrapbootstrap.com/preview/WB0N38R04" target="_blank"></a>
-                        </figure>
-                        <div class="content col-md-6 col-sm-12 col-xs-12">
-                            <div class="content-inner">
-                                <h3 class="project-title">#hashtagslide</h3>
-                                <ul class="meta list-unstyled">
-                                    <li><strong>Client:</strong> 3rd Wave Media</li>
-                                    <li><strong>What we did:</strong> SaaS development, UX design</li>
-                                </ul><!--//meta-->
-                                <div class="desc">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales dolor ut ligula faucibus, nec mattis nibh eleifend. Duis et enim at lacus pharetra mollis molestie nec magna. Maecenas tristique laoreet tristique...</p>
-                                </div><!--//desc-->
-                                <p class="link" ><i class="fa fa-briefcase"></i> <a class="more-link" href="case-study-1.html">Read full case study</a></p>
-                                <p class="link" ><i class="fa fa-external-link"></i> <a class="site-link" href="http://wrapbootstrap.com/preview/WB0N38R04" target="_blank">Website link</a></p>
-                            </div><!--//content-inner-->
-                        </div><!--//content-->
-                    </div><!--//row-->
-                </div><!--//item-->
-                <div class="item item-2">
-                    <div class="row">
-                        <figure class="figure-container col-md-6 col-sm-12 col-xs-12">
-                            <a class="img-link" href="http://wrapbootstrap.com/preview/WB09R23P8" target="_blank"></a>
-                        </figure>
-                        <div class="content col-md-6 col-sm-12 col-xs-12">
-                            <div class="content-inner">
-                                <h3 class="project-title">REAP - Real Estate Agency Application</h3>
-                                <ul class="meta list-unstyled">
-                                    <li><strong>Client:</strong> App Startup</li>
-                                    <li><strong>What we did:</strong> App development</li>
-                                </ul><!--//meta-->
-                                <div class="desc">
-                                    <p>Mauris in vestibulum ex. Donec vel malesuada tortor. Etiam consequat semper pulvinar. Integer sit amet felis nisl. Proin leo metus, volutpat vel fringilla vel, faucibus et mi. Duis finibus erat erat, quis mollis...</p>
-                                </div><!--//desc-->
-                                <p class="link" ><i class="fa fa-briefcase"></i> <a class="more-link" href="case-study-2.html">Read full case study</a></p>
-                                <p class="link" ><i class="fa fa-external-link"></i> <a class="site-link" href="http://wrapbootstrap.com/preview/WB09R23P8" target="_blank">Website link</a></p>
-                            </div><!--//content-inner-->
-                        </div><!--//content-->
-                    </div><!--//row-->
-                </div><!--//item-->
-                <div class="item item-3">
-                    <div class="row">
-                        <figure class="figure-container col-md-6 col-sm-12 col-xs-12">
-                            <a class="img-link" href="http://wrapbootstrap.com/preview/WB07364T3" target="_blank"></a>
-                        </figure>
-                        <div class="content col-md-6 col-sm-12 col-xs-12">
-                            <div class="content-inner">
-                                <h3 class="project-title">Schoo Sys - School Management System</h3>
-                                <ul class="meta list-unstyled">
-                                    <li><strong>Client:</strong> Startup Week</li>
-                                    <li><strong>What we did:</strong> Site design &amp; development</li>
-                                </ul><!--//meta-->
-                                <div class="desc">
-                                    <p>Sed ornare suscipit risus, sed elementum justo porta ac. Duis ultricies lobortis nibh sed facilisis. Etiam eu leo sapien. Integer gravida at urna ac bibendum. Nullam eu orci at felis fermentum lobortis...</p>
-                                    <p class="link" ><i class="fa fa-briefcase"></i> <a class="more-link" href="case-study-1.html">Read full case study</a></p>
-                                    <p class="link" ><i class="fa fa-external-link"></i> <a class="site-link" href="http://wrapbootstrap.com/preview/WB07364T3" target="_blank">Website link</a></p>
-                                </div><!--//desc-->
-                            </div><!--//conten-inner-->
-                        </div><!--//content-->
-                    </div><!--//row-->
-                </div><!--//item-->
-                <div class="item item-3">
-                    <div class="row">
-                        <figure class="figure-container col-md-6 col-sm-12 col-xs-12">
-                            <a class="img-link" href="http://wrapbootstrap.com/preview/WB07364T3" target="_blank"></a>
-                        </figure>
-                        <div class="content col-md-6 col-sm-12 col-xs-12">
-                            <div class="content-inner">
-                                <h3 class="project-title">CliniMed - Medical Management System</h3>
-                                <ul class="meta list-unstyled">
-                                    <li><strong>Client:</strong> Startup Week</li>
-                                    <li><strong>What we did:</strong> Site design &amp; development</li>
-                                </ul><!--//meta-->
-                                <div class="desc">
-                                    <p>Sed ornare suscipit risus, sed elementum justo porta ac. Duis ultricies lobortis nibh sed facilisis. Etiam eu leo sapien. Integer gravida at urna ac bibendum. Nullam eu orci at felis fermentum lobortis...</p>
-                                    <p class="link" ><i class="fa fa-briefcase"></i> <a class="more-link" href="case-study-1.html">Read full case study</a></p>
-                                    <p class="link" ><i class="fa fa-external-link"></i> <a class="site-link" href="http://wrapbootstrap.com/preview/WB07364T3" target="_blank">Website link</a></p>
-                                </div><!--//desc-->
-                            </div><!--//conten-inner-->
-                        </div><!--//content-->
-                    </div><!--//row-->
-                </div><!--//item-->
-                <div class="item item-3">
-                    <div class="row">
-                        <figure class="figure-container col-md-6 col-sm-12 col-xs-12">
-                            <a class="img-link" href="http://wrapbootstrap.com/preview/WB07364T3" target="_blank"></a>
-                        </figure>
-                        <div class="content col-md-6 col-sm-12 col-xs-12">
-                            <div class="content-inner">
-                                <h3 class="project-title">FreeLance - Project Management System</h3>
-                                <ul class="meta list-unstyled">
-                                    <li><strong>Client:</strong> Startup Week</li>
-                                    <li><strong>What we did:</strong> Site design &amp; development</li>
-                                </ul><!--//meta-->
-                                <div class="desc">
-                                    <p>Sed ornare suscipit risus, sed elementum justo porta ac. Duis ultricies lobortis nibh sed facilisis. Etiam eu leo sapien. Integer gravida at urna ac bibendum. Nullam eu orci at felis fermentum lobortis...</p>
-                                    <p class="link" ><i class="fa fa-briefcase"></i> <a class="more-link" href="case-study-1.html">Read full case study</a></p>
-                                    <p class="link" ><i class="fa fa-external-link"></i> <a class="site-link" href="http://wrapbootstrap.com/preview/WB07364T3" target="_blank">Website link</a></p>
-                                </div><!--//desc-->
-                            </div><!--//conten-inner-->
-                        </div><!--//content-->
-                    </div><!--//row-->
-                </div><!--//item-->
-                <div class="item item-3">
-                    <div class="row">
-                        <figure class="figure-container col-md-6 col-sm-12 col-xs-12">
-                            <a class="img-link" href="http://wrapbootstrap.com/preview/WB07364T3" target="_blank"></a>
-                        </figure>
-                        <div class="content col-md-6 col-sm-12 col-xs-12">
-                            <div class="content-inner">
-                                <h3 class="project-title">CDSys - Car Dealing System</h3>
-                                <ul class="meta list-unstyled">
-                                    <li><strong>Client:</strong> Startup Week</li>
-                                    <li><strong>What we did:</strong> Site design &amp; development</li>
-                                </ul><!--//meta-->
-                                <div class="desc">
-                                    <p>Sed ornare suscipit risus, sed elementum justo porta ac. Duis ultricies lobortis nibh sed facilisis. Etiam eu leo sapien. Integer gravida at urna ac bibendum. Nullam eu orci at felis fermentum lobortis...</p>
-                                    <p class="link" ><i class="fa fa-briefcase"></i> <a class="more-link" href="case-study-1.html">Read full case study</a></p>
-                                    <p class="link" ><i class="fa fa-external-link"></i> <a class="site-link" href="http://wrapbootstrap.com/preview/WB07364T3" target="_blank">Website link</a></p>
-                                </div><!--//desc-->
-                            </div><!--//conten-inner-->
-                        </div><!--//content-->
-                    </div><!--//row-->
-                </div><!--//item-->
-                <div class="item item-3">
-                    <div class="row">
-                        <figure class="figure-container col-md-6 col-sm-12 col-xs-12">
-                            <a class="img-link" href="http://wrapbootstrap.com/preview/WB07364T3" target="_blank"></a>
-                        </figure>
-                        <div class="content col-md-6 col-sm-12 col-xs-12">
-                            <div class="content-inner">
-                                <h3 class="project-title">WH - Billing System</h3>
-                                <ul class="meta list-unstyled">
-                                    <li><strong>Client:</strong> Startup Week</li>
-                                    <li><strong>What we did:</strong> Site design &amp; development</li>
-                                </ul><!--//meta-->
-                                <div class="desc">
-                                    <p>Sed ornare suscipit risus, sed elementum justo porta ac. Duis ultricies lobortis nibh sed facilisis. Etiam eu leo sapien. Integer gravida at urna ac bibendum. Nullam eu orci at felis fermentum lobortis...</p>
-                                    <p class="link" ><i class="fa fa-briefcase"></i> <a class="more-link" href="case-study-1.html">Read full case study</a></p>
-                                    <p class="link" ><i class="fa fa-external-link"></i> <a class="site-link" href="http://wrapbootstrap.com/preview/WB07364T3" target="_blank">Website link</a></p>
-                                </div><!--//desc-->
-                            </div><!--//conten-inner-->
-                        </div><!--//content-->
-                    </div><!--//row-->
-                </div><!--//item-->
-            </div><!--//owl-carousel-->
-            <a class="btn btn-cta btn-cta-secondary" href="work.html">View all case studies</a>
-        </div><!--container-fluid-->
-    </section><!--//latest-work-->
-   
-    <!-- ******CTA Section****** -->
-    <section id="cta-section" class="cta-section section text-center home-cta-section">
-        <div class="container">
-           <h2 class="title">Want to have a quick chat?</h2>
-           <p class="phone contact-info">
-               <span class="intro">We are only a phone call away</span>
-               <span class="info"><a href="tel:+08001234567">0800 123 4567</a></span>
-           </p><!--//phone-->
-           <p class="email contact-info">
-               <span class="intro">You can also email us</span>
-               <span class="info"><a href="mailto:hello@yourdevstudio.com">hello@yourdevstudio.com</a></span>
-           </p><!--//phone-->              
-        </div><!--//container-->
-    </section><!--//cta-section-->
-    
+    <div ng-view="" style="padding-top:15px;"></div>
     <!-- ******FOOTER****** --> 
     <footer class="footer">
         <div class="footer-content">
@@ -310,10 +83,11 @@
                         <div class="footer-col-inner">
                             <h3 class="sub-title">Quick Links</h3>
                             <ul class="list-unstyled">
-                                <li><a href="about.html">About us</a></li>
-                                <li><a href="work.html">Our work</a></li>
-                                <li><a href="contact.html">Contact</a></li>                                
-                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="#/about">About us</a></li>
+                                <li><a href="#/work">Our Products</a></li>
+                                <li><a href="#/work">Our Services</a></li>
+                                <li><a href="#/contact">Contact</a></li>                                
+                                <li><a href="#/blog">Blog</a></li>
                                 <li><a href="#">Privacy policy</a></li>
                                 <li><a href="#">Terms &amp; Conditions</a></li>
                             </ul>
@@ -358,14 +132,14 @@
                                 <p class="adr clearfix col-md-12 col-sm-4">
                                     <span class="fs1" aria-hidden="true" data-icon="&#xe01d;"></span>        
                                     <span class="adr-group">       
-                                        <span class="street-address">56 College Green Road</span><br />
-                                        <span class="city">Bristol</span><br />
-                                        <span class="postal-code">BS1 XR18</span><br />
-                                        <span class="country-name">UK</span>
+                                        <span class="street-address">Unit 809 Villa Barbara Street</span><br />
+                                        <span class="city">Pasay</span><br />
+                                        <span class="postal-code">1300</span><br />
+                                        <span class="country-name">Manila, Philippines</span>
                                     </span>
                                 </p>
-                                <p class="tel col-md-12 col-sm-4"><span class="fs1" aria-hidden="true" data-icon="&#x77;"></span><a href="tel:+08001234567">0800 123 4567</a></p>
-                                <p class="email col-md-12 col-sm-4"><span class="fs1" aria-hidden="true" data-icon="&#xe010;"></span><a href="#">hello@yourdevstudio.com</a></p> 
+                                <p class="tel col-md-12 col-sm-4"><span class="fs1" aria-hidden="true" data-icon="&#x77;"></span><a href="tel:+6329209693137">+632 920 9693137</a></p>
+                                <p class="email col-md-12 col-sm-4"><span class="fs1" aria-hidden="true" data-icon="&#xe010;"></span><a href="#">sales@technowebhub.com</a></p> 
                             </div> 
                         </div><!--//footer-col-inner-->            
                     </div><!--//foooter-col-->   
@@ -375,13 +149,11 @@
         <div class="bottom-bar">
             <div class="container center">                                   
                 <ul class="social-icons list-inline">
-                    <li><a href="https://twitter.com/3rdwave_themes"><i class="fa fa-twitter"></i></a></li>                        
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://www.facebook.com/3rdwavethemes"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li class="last"><a href="#"><i class="fa fa-google-plus"></i></a></li>                     
+                    <li><a href="https://twitter.com/technowebhub"><i class="fa fa-twitter"></i></a></li>                        
+                    <li><a href="https://www.facebook.com/twebhub?ref=hl"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://github.com/technowebhub"><i class="fa fa-github"></i></a></li>
                 </ul> 
-                <small class="copyright text-center">Copyright @ 2015 <a href="http://themes.3rdwavemedia.com/" target="_blank">TechnoWebHub Software</a></small>                 
+                <small class="copyright text-center">Copyright @ 2015 TechnoWebHub Software Development</small>                 
             </div><!--//container-->
         </div><!--//bottom-bar-->
     </footer><!--//footer-->
@@ -393,12 +165,12 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h4 id="contactModalLabel" class="modal-title text-center">Start your project today</h4>
-                    <p class="intro text-center">Lorem ipsum dolor sit amet consectetur adipiscing elit laoreet tortor consequat nisi scelerisque commodo etiam justo sapien.</p>
+                    <p class="intro text-center">What do you want us to automate? Any processess that you want us to create a Software System with? We'd like to be listend and be part of your success</p>
                 </div>
                 <div class="modal-body">
                     <ul class="contact-info list-inline text-center">
-                        <li class="tel"><span class="fs1" aria-hidden="true" data-icon="&#x77;"></span><br /> <a href="+0800123456">0800 123 4567</a></li>
-                        <li class="email"><span class="fs1" aria-hidden="true" data-icon="&#xe010;"></span><br /> <a href="#">hello@yourdevstudio.com</a></li>
+                        <li class="tel"><span class="fs1" aria-hidden="true" data-icon="&#x77;"></span><br /> <a href="tel:+6329209693137">+632 920 9693137</a></li>
+                        <li class="email"><span class="fs1" aria-hidden="true" data-icon="&#xe010;"></span><br /> <a href="#">sales@technowebhub.com</a></li>
                     </ul>
                     <form id="contact-form" class="contact-form" method="post" action="#">                    
                         <div class="row text-center">
@@ -429,30 +201,14 @@
             </div><!--//modal-content-->
         </div><!--//modal-dialog-->
     </div><!--//modal-->
+     
     
-    <!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->  
-    <div class="config-wrapper">
-        <div class="config-wrapper-inner">
-            <a id="config-trigger" class="config-trigger" href="#"><span class="fs1" aria-hidden="true" data-icon="&#x67;"></span></a>
-            <div id="config-panel" class="config-panel">
-                <h5>Choose Colour</h5>
-                <ul id="color-options" class="list-unstyled list-inline">
-                    <li class="theme-1 active" ><a data-style="assets/css/styles.css" href="#"></a></li>
-                    <li class="theme-2"><a data-style="assets/css/styles-2.css" href="#"></a></li>
-                    <li class="theme-3"><a data-style="assets/css/styles-3.css" href="#"></a></li>
-                    <li class="theme-4"><a data-style="assets/css/styles-4.css" href="#"></a></li>                   
-                    <li class="theme-5"><a data-style="assets/css/styles-5.css" href="#"></a></li>                     
-                    <li class="theme-6"><a data-style="assets/css/styles-6.css" href="#"></a></li>
-                    <li class="theme-7"><a data-style="assets/css/styles-7.css" href="#"></a></li>
-                    <li class="theme-8"><a data-style="assets/css/styles-8.css" href="#"></a></li>                    
-                    <li class="theme-9"><a data-style="assets/css/styles-9.css" href="#"></a></li>
-                    <li class="theme-10"><a data-style="assets/css/styles-10.css" href="#"></a></li>
-                </ul><!--//color-options-->
-                <a id="config-close" class="close" href="#"><i class="fa fa-times-circle"></i></a>
-            </div><!--//configure-panel-->
-        </div><!--//config-wrapper-inner-->
-    </div><!--//config-wrapper-->
- 
+         
+    <!-- angular js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.min.js"></script>
+    <script type="text/javascript" src="assets/js/angularjs/app.js"></script>
+    
     <!-- Main Javascript -->          
     <script type="text/javascript" src="assets/plugins/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
@@ -483,11 +239,9 @@
     
     <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
     <script src="assets/js/demo/style-switcher.js"></script>
-    
-    <!--<iframe id="iframe" name="iframe" src="http://mobilemail18.secureserver.net" style="width:500px; height:500px;"></iframe>-->
-    
-    
+
+
   
-</body>
+</body>   
 </html> 
 
