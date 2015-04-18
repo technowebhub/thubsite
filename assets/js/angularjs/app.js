@@ -14,8 +14,16 @@ angular.module('thubApp',['ngRoute'])
             templateUrl:'pages/contact.html',
             controller:'contactController'
         })
+        .when('/services', {
+            templateUrl:'pages/services.html',
+            controller:'servicesController'
+        })
         .when('/blog', {
             templateUrl:'blog.html'
+        })
+        .when('/about', {
+            templateUrl:'pages/about.html',
+        controller:'aboutController'
         })
 })
 
@@ -32,7 +40,13 @@ angular.module('thubApp',['ngRoute'])
 .controller('contactController',function($log,$scope) {
     $scope.workC = "hello";
 })
+.controller('servicesController',function($log,$scope) {
+    $scope.workC = "hello";
+})
 .controller('blogController',function($log,$scope) {
+    $scope.workC = "hello";
+})
+.controller('aboutController',function($log,$scope) {
     $scope.workC = "hello";
 })
 
