@@ -33,7 +33,7 @@
     <![endif]-->
 </head> 
 
-<body class="home-page" ng-app="thubApp">
+<body class="home-page" ng-app="thubApp" >
     <div class="header-wrapper">
         <!-- ******HEADER****** --> 
         <header id="header" class="header navbar-fixed-top">  
@@ -73,12 +73,14 @@
         </header><!--//header-->   
         
     </div><!--//header-wrapper-->
-    <div ng-view="" style="padding-top:15px;" autoscroll="true"></div>
+    <div ng-view="" style="padding-top:25px;" autoscroll="true"></div>
     <!-- ******FOOTER****** --> 
     <footer class="footer">
         <div class="footer-content">
             <div class="container">
                 <div class="row">
+                    <div class="footer-col col-md-3 col-sm-2 blog-col">
+                    </div><!--//foooter-col--> 
                     <div class="footer-col col-md-3 col-sm-4 links-col">
                         <div class="footer-col-inner">
                             <h3 class="sub-title">Quick Links</h3>
@@ -93,38 +95,7 @@
                             </ul>
                         </div><!--//footer-col-inner-->
                     </div><!--//foooter-col-->
-                    <div class="footer-col col-md-6 col-sm-8 blog-col">
-                        <div class="footer-col-inner">
-                            <h3 class="sub-title">Latest From Our Blog</h3>
-                            <div class="item">
-                                <figure class="figure">
-                                    <img class="img-responsive" src="assets/images/blog/blog-tiny-thumb-1.jpg" alt="" />
-                                </figure>
-                                <div class="content">
-                                    <h4 class="post-title"><a href="blog-post.html">DevStudio helps XYZ launch</a></h4>
-                                    <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales dolor ut ligula faucibus...</p>
-                                    <ul class="meta list-inline">
-                                        <li>18 Feb 2015</li>
-                                        <li>James Lee</li>
-                                    </ul>
-                                </div><!--//content-->
-                            </div>  
-                            <div class="item">
-                                <figure class="figure">
-                                    <img class="img-responsive" src="assets/images/blog/blog-tiny-thumb-2.jpg" alt="" />
-                                </figure>
-                                <div class="content">
-                                    <h4 class="post-title"><a href="blog-post.html">devAid - Free Bootstrap Theme</a></h4>
-                                    <p class="intro">Mauris libero leo, dapibus a congue ut, mollis sed nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus augue nec nulla ultricies...</p>
-                                    <ul class="meta list-inline">
-                                        <li>21 Dec 2014</li>
-                                        <li>Vincent Fowler</li>
-                                    </ul>
-                                </div><!--//content-->
-                            </div>                                                     
-                        </div><!--//footer-col-inner-->
-                    </div><!--//foooter-col--> 
-                    <div class="footer-col col-md-3 col-sm-12 contact-col">
+                    <div class="footer-col col-md-3 col-sm-4 contact-col">
                         <div class="footer-col-inner">
                             <h3 class="sub-title">Get In Touch</h3>
                             <p class="intro"></p>
@@ -139,10 +110,13 @@
                                     </span>
                                 </p>
                                 <p class="tel col-md-12 col-sm-4"><span class="fs1" aria-hidden="true" data-icon="&#x77;"></span><a href="tel:+6329209693137">+632 920 9693137</a></p>
-                                <p class="email col-md-12 col-sm-4"><span class="fs1" aria-hidden="true" data-icon="&#xe010;"></span><a href="#">sales@technowebhub.com</a></p> 
+                                <p class="email col-md-12 col-sm-4"><span class="fs1" aria-hidden="true" data-icon="&#xe010;"></span><a href="mailto:sales@technowebhub.co">sales@technowebhub.com</a></p> 
                             </div> 
                         </div><!--//footer-col-inner-->            
-                    </div><!--//foooter-col-->   
+                    </div><!--//foooter-col--> 
+                    <div class="footer-col col-md-3 col-sm-2 blog-col">
+                    </div><!--//foooter-col--> 
+                    
                 </div>   
             </div>        
         </div><!--//footer-content-->
@@ -234,12 +208,6 @@
          
     <script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.js"></script> 
     <script type="text/javascript" src="assets/js/owl-custom.js"></script>
-         
-    
-    
-    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
-    <script src="assets/js/demo/style-switcher.js"></script>
-
 
   
 </body>   
